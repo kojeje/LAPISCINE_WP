@@ -1,0 +1,35 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+
+<main>
+
+    <a href="{{ post.link }}">
+
+        <div id="bloc_articles container">
+            <article class="article2">
+
+
+                <h1 class="geo_h1">
+                    {{ post.title }}
+                </h1>
+                <div class="geo_thumb">
+                    <img src="{{ post.thumbnail.src }}" alt="thumb">
+                </div>
+
+                <div class='geo_content'>
+                    {{ post.content }}
+                </div>
+
+
+
+
+            </article>
+        </div>
+    </a>
+
+
+
+</main>
+
+{% endblock %}

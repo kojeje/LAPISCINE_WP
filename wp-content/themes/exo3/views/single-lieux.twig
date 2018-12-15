@@ -1,0 +1,35 @@
+{% extends 'base.twig' %}
+{% block content %}
+<div class="article2">
+    <article>
+        {% for post in posts %}
+        <div class="geo_thumb">
+            <img src="{{ post.thumbnail.src }}" alt="thumb">
+        </div>
+        <h1 class="geo_h1">
+            {{ post.title }}
+        </h1>
+        <h2 class="geo_h2"><?php the_field('sous-titre') ?></h2>
+        <div class='geo_content'>
+            {{ post.content }}
+        </div>
+        <div class="container annexe">
+            <div class="row">
+                <div class="col-4 img_geo"><img src="{{ post.get_field('img1') }}" alt="img"></div>
+                <div class="col-4 img_geo"><img src="{{ post.get_field('img2') }}" alt="img"></div>
+                <p class="col-4  img_geo add_text"> {{ post.additionnal_text }} </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+
+                <div class="col-12 geo_map"><iframe class="gmap" frameborder="0" scrolling="no" width="100%" height="200" src="https://maps.google.com/maps?q=<?php the_field('latitude') ?>,<?php the_field('longitude') ?>&hl=es;z=14&amp;output=embed"></iframe><br />
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </article>
+</div>
+{% endblock %}
+

@@ -1,0 +1,28 @@
+<header class="header container-fluid">
+    <div class="entete">
+        <div>
+            <div class="row">
+                <div class="col-5 menu">
+                    {% for item in header_gauche.items %}
+                        <a href="{{ item.link }}">
+                            <li>{{ item.title }}</li>
+                        </a>
+                    {% endfor %}
+                </div>
+                <div class="col-2 logo">
+                    <a href="">
+                        <img src="/wp-content/themes/exo2/assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-5 menu">
+                    {% for item in header_droit.items %}
+                        <a href="{{ item.link }}">
+                            <li>{{ item.title }}</li>
+                        </a>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,31 @@
+<footer class="footer">
+    <div class="header container-fluid">
+        <div class="entete">
+            <div>
+                <div class="row">
+
+                    <div class="col-2 logo">
+                        <a href="">
+                            <img src="/wp-content/themes/exo2/assets/img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="col-10">
+                        {# on appelle la variable globale header (définie dans functions.php)
+          qui contient le menu header, et on boucle sur tous les éléments
+          qu'il contient #}
+                        {% for item in footer.items %}
+                            <a href="{{ item.link }}">
+                                <li>{{ item.title }}</li>
+                            </a>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</footer>

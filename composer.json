@@ -1,0 +1,5 @@
+{
+    "require": {
+        "hellonico/acf-country": "^2.0"
+    }
+}
