@@ -4,7 +4,7 @@
 $context = Timber::get_context();
 
 // tableau d'arguments pour modifier la requête en base
-// de données, et venir récupérer uniquement les trois
+// de données, et venir récupérer uniquement les 2
 // derniers articles
 $args_posts = [
 	'post_type' => 'post',

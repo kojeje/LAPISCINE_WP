@@ -8,18 +8,26 @@
 
         <div id="bloc_articles container">
             <article class="article2">
-
-
                 <h1 class="geo_h1">
                     {{ post.title }}
                 </h1>
-                <div class="geo_thumb">
-                    <img src="{{ post.thumbnail.src }}" alt="thumb">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="geo_thumb">
+                            <img src="{{ post.thumbnail.src }}" alt="thumb">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class='geo_content'>
+                            {{ post.content }}
+                        </div>
+                    </div>
                 </div>
 
-                <div class='geo_content'>
-                    {{ post.content }}
-                </div>
+
+
+
+
 
 
 

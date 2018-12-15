@@ -1,5 +1,5 @@
 {% extends 'base.twig' %}
-{#{%  block banner %}#}
+{%  block banner %}
     {#<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">#}
         {#<div class="carousel-inner slider">#}
             {# slide 1, 2 , 3, etc.#}
@@ -14,7 +14,64 @@
             {#{% endfor %}#}
         {#</div>#}
     {#</div>#}
-{#{% endblock %}#}
+
+
+    <div class="banner">
+        <!--    SECTION -->
+        <section class="section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="row">
+                            <!--                       SLIDER-->
+                            <figure>
+                                <div id="slider">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active diapo" >
+                                                <img class="d-block w-100 img-fluid"
+                                                     src="/wp-content/uploads/2018/12/10.jpg"
+                                                     alt="First slide">
+                                            </div>
+                                            <div class="carousel-item diapo">
+                                                <img class="d-block w-100 img-fluid"
+                                                     src="/wp-content/uploads/2018/12/13.jpg"
+                                                     alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item diapo">
+                                                <img class="d-block w-100 img-fluid"
+                                                     src="/wp-content/uploads/2018/12/08.jpeg"
+                                                     alt="Third slide">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <figcaption id="overlay" class="overlay">
+
+                                    <h1 class="black-btn" id="bouton2">LA BIB'd'OccaZ...</h1>
+
+                                    <p id="decouvrez">Parce que les livres ont plus de 9 vies...<br>
+                                        Quand nous les avons lu...<br>
+                                        Nous les partageons!</p>
+
+                                    <a href="#ancre1" class="btn_link">
+                                        <h1 class="bouton">
+                                            GO!
+                                        </h1>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+{% endblock %}
 
 {% block content %}
 
